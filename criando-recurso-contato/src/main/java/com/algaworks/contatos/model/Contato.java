@@ -11,14 +11,14 @@ import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 public class Contato {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@NotBlank
 	private String nome;
-	
+
 	@NotNull
 	@Email
 	private String email;
@@ -71,6 +71,5 @@ public class Contato {
 			return false;
 		return true;
 	}
-
 
 }
